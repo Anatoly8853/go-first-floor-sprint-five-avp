@@ -44,7 +44,6 @@ func (t Training) meanSpeed() float64 {
 // Calories возвращает количество потраченных килокалорий на тренировке.
 // Пока возвращаем 0, так как этот метод будет переопределяться для каждого типа тренировки.
 func (t Training) Calories() float64 {
-
 	return 0
 }
 
@@ -185,7 +184,6 @@ func (s Swimming) Calories() float64 {
 // TrainingInfo returns info about swimming training.
 // Это переопределенный метод TrainingInfo() из Training.
 func (s Swimming) TrainingInfo() InfoMessage {
-	// вставьте ваш код ниже
 	return InfoMessage{
 		TrainingType: s.Training.TrainingType,
 		Duration:     s.Duration,
